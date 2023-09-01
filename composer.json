@@ -1,0 +1,35 @@
+{
+  "name": "faysal/crud-generator",
+  "description": "A laravel package to generate CURD operations",
+  "type": "liberary",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Faysal Ahmed",
+      "email": "faysal.ahmed833@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CRUDGenerator\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.4|^8.0",
+    "illuminate/support": "^8.0",
+    "illuminate/console": "^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0",
+    "phpunit/phpunit": "^9.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CRUDGenerator\\CRUDGeneratorServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
