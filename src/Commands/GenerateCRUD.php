@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\File;
 
 class GenerateCRUD extends Command
 {
-    protected $signature = 'generate:crud {entity: The name of the entity (singular,lowercase)}';
+    protected $signature = 'generate:crud {entity}';
     protected $description = 'Generate CRUD files for a given entity';
 
     public function handle()
