@@ -17,7 +17,8 @@ class GenerateCRUD extends Command
         $routeFile =  "{$entity}.php";
 
         Artisan::call('make:controller',[
-            'name' => "{$entity}Controller"
+            'name' => "{$entity}Controller",
+            '--resource'=>true
         ]);
 
         Artisan::call('make:model',[
