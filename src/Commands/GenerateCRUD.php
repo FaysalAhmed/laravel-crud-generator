@@ -14,7 +14,7 @@ class GenerateCRUD extends Command
     public function handle()
     {
         $entity = $this->argument('entity');
-        $routeFile = $this->option('route')?: "{$entity}.php";
+        $routeFile =  "{$entity}.php";
 
         Artisan::call('make:controller',[
             'name' => "{$entity}Controller"
